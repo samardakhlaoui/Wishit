@@ -1,0 +1,186 @@
+@import "../../pages/user_interface/PrivateScreen.scss";
+
+.navbar {
+  @include themify($themes) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 20px;
+    height: 50px;
+    @include mobile{
+      padding-left: 0px;
+    }
+    .middle{
+      justify-content: center;
+    }
+    
+    position: sticky;
+    top: 0;
+    background-color: themed("bgtopbar");
+    color:themed("textColor");
+    z-index: 999;
+    .logo{
+      span {
+        
+        font-size: 44px;
+        color: themed("logo");
+        font-family: 'Sail', sans-serif;
+      }
+      .wlogo{
+        @include mobile{
+          display: none;
+        }
+      }
+      
+    }
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: center;
+      @include mobile {
+        padding-left: 5px;
+        gap: 5px;
+      }
+
+
+      .search {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-radius: 17px;
+        padding: 5px;
+        width: 60%;
+        background-color: themed("bgSearchbar");
+        @include mobile{
+          display: none;
+        }
+        
+        input {
+          border: none;
+          width: 500px;
+          background-color: themed("bgSearchbar");
+          color: themed("textColor");
+
+          @include mobile{
+            display: none;
+          }
+
+          @include tablet{
+            width: 200px;
+          }
+          
+        }
+      }
+      fieldset.MuiOutlinedInput-notchedOutline.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+        border: none;
+      }
+      .btn{
+        display: flex;
+        text-decoration: none;
+        width: 15%;
+        height: 35px;
+        color: #fff;
+        background-color: #fcdf78;
+        border: none;
+        border-radius: 17px;
+        padding: 5px 0px;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+        @include mobile{
+          display: none;
+        }
+        p{
+          font-size: 16px;
+          padding-left: 10px;
+          padding-bottom: 1px;
+
+          
+        }
+        .tune{
+          padding-right: 10px;
+          @include mobile{
+            padding:2px;
+          }
+        }
+        
+        }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding-right: 40px;
+      search {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-radius: 17px;
+        padding: 5px;
+        background-color: themed("bgSearchbar");
+      }
+      
+
+      .groupadd{
+        display: none;
+       
+        @include tablet{
+          display: block;
+        }
+
+      }
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 500;
+
+        @include tablet{
+          display: none;
+        }
+
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        
+      }
+    }
+    .search-container {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    .search-container input {
+      width: 100%;
+      padding: 0.5rem;
+      border: none;
+      border-bottom: 1px solid #ccc;
+    }
+    
+    .search-close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: none;
+      border: none;
+      color: #000;
+      font-size: 1.5rem;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+    }
+  }
+  
+}

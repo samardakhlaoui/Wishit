@@ -1,0 +1,23 @@
+.help{
+    padding: 30px 60px ;
+}
+.msg {
+    width: 95%;
+    padding-bottom: 45vh;
+    border: none;
+    background: #efefef;
+    font-size: 17px;
+    word-break: break-word;
+    overflow: hidden;
+}
+.send-btn {
+    top: 67vh;
+    right: 17vh;
+    padding: 11px 19px;
+    position: absolute;
+    background: #FCDF78;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}

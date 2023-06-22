@@ -1,0 +1,47 @@
+.admin-topbar-container{
+    display:flex;
+    align-items: center;
+    padding: 10px 0;
+
+    .logo {
+        flex: 0.1;
+        font-family: sail;
+        color: #fadc6d;
+        padding: 0 2%;
+    }
+    .search {
+        display: flex;
+        align-items: center;
+        flex: 0.4;
+    }
+    .search-input{   
+        padding: 2% 5%;
+        width: 65%;
+        border-radius: 30px;
+        border: none;
+        background: #efefef
+    }
+    .loop{
+        position: absolute;
+        padding: 0px 2px;
+    }
+    .hello{
+        display: flex;
+        flex: 0.4;
+    }
+    .adminInfo {
+        display: flex;
+        align-items: center;
+    }
+    .adminPhoto {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+    .adminInfo-inner {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Adjust the gap as needed */
+      }
+
+}

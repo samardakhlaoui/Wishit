@@ -1,0 +1,196 @@
+@import "../../pages/user_interface/PrivateScreen.scss";
+
+.post {
+    @include themify($themes){
+    background-color: themed("bg");
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 13px;
+    color: themed("textColor");
+    font-family: 'Lato',sans-serif;
+    height: min-content;
+    
+  .post__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .post__header .user {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user__image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user__name {
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .post__date {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .post__more-icon {
+    cursor: pointer;
+  }
+  .drop {
+    left:50%;
+    margin-left:-150px;
+    top:50px;
+    position:absolute;
+}
+
+.dropdown {
+    background:#fff;
+    border-radius:4px;
+    width:223px;    
+}
+.dropdown-menu>li>a {
+    color:#428bca;
+}
+.dropdown ul.dropdown-menu {
+    border-radius:4px;
+    box-shadow:none;
+    margin-top:20px;
+    width:170px;
+}
+.dropdown ul.dropdown-menu:before {
+    content: "";
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: -10px;
+    right: 16px;
+    z-index: 10;
+}
+.dropdown ul.dropdown-menu:after {
+    content: "";
+    border-bottom: 12px solid #ccc;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    position: absolute;
+    top: -12px;
+    right: 14px;
+    z-index: 9;
+}
+
+  .user__details{
+    display: flex;
+  }
+  
+  .post__image-container {
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .post__image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .post__caption {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .post__caption span {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .post__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .post__actions-left {
+    display: flex;}
+
+    .post__actions-right{
+        gap:10px;
+    }
+
+    .popupContainer{
+      z-index: 100;
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 100%;
+      position: fixed;
+      animation: popup 1s forwards;
+      overflow: scroll;
+      
+  
+      @keyframes popup {
+        to {
+          backdrop-filter: blur(2px);
+        }
+    }
+
+    .modal {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-100%);
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 0 2px rgba(131, 130, 130, 0.356);
+      overflow: auto;
+      transform: scaleY(0);
+      transform-origin: center;
+      animation: modal .5s forwards;
+
+      
+
+      @keyframes modal {
+        to {
+          transform: scale(1) translate(-50%);
+        }
+      }
+      .cross {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        transition: 0.1s;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.07);
+        }
+      }
+    }
+  }
+    
+}}
+.btn_update {
+  padding: 3%;
+  background-color: #FADC6D;
+  color: #333333;
+  width: 48%;
+  border-radius: 100px;
+  border: none;
+  float: right;
+  font-weight: bold;
+  font-size: 15px;
+
+}
+button.btn_update:hover {
+  background: #fadc6dab;
+}

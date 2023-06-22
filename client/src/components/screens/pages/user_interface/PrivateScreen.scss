@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Sail&display=swap');
+$themes: (
+  light: (
+    textColor: #000,
+    bg: #ffffff,
+    logo:#FCDF78,
+    bgSoft: #f6f3f3,
+    textColorSoft: #555,
+    border: lightgray,
+    bgtopbar:#ffff,
+    bgSearchbar:#efefef,
+    searchIcon:#161717,
+    delete:#e4e6eb,
+  ),
+  dark: (
+    textColor: whitesmoke,
+    bg: #161717,
+    logo: #FCDF78,
+    bgSoft: #333,
+    textColorSoft: lightgray,
+    border: #444,
+    bgtopbar:#242424,
+    bgSearchbar:#545454,
+    searchIcon:#ffff,
+    icons :#D9D9D9,
+    delete:#8c8c8c,
+  ),
+);
+
+@mixin themify($themes) {
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), "#{$key}");
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}
+
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 960px) {
+    @content;
+  }
+}
+
+$margin-body: 0;
+$font :"poppins", sans serif;
+
+body {
+  margin: $margin-body;
+  font-family: $font;
+  background: white;
+}

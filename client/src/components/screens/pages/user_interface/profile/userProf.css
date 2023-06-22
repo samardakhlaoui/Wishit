@@ -1,0 +1,57 @@
+.friendsleft{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+.friendInfo{
+    display: flex;
+    align-items: center;
+}
+
+.friendsleft img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.follow-btn {
+    padding: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    background: #e4e6eb;
+    color: #161717;
+    border-radius: 50px;
+}
+
+.follow-btn:hover {
+    border: none;
+    background: #FADC6D;
+    color: white;
+}
+.following-btn{
+    padding: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    background: #FADC6D;
+    color: white;
+    border-radius: 50px;
+}
+.following-btn:hover {
+    border: none;
+    background: #e4e6eb;
+    color: #161717;
+}
+a.dropdown-link {
+    text-decoration: none;
+    color: black;
+}
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.dropdown-icon.css-i4bv87-MuiSvgIcon-root {
+    cursor: pointer;
+}

@@ -1,0 +1,15 @@
+.flex-container{
+    display: flex; 
+    height: 100%;
+    justify-content: center;
+
+    .flex-item-users{
+        flex: 3.3;
+        margin: 5px;
+    }
+    .flex-item-posts{
+        flex: 8.7;
+
+        margin: 5px;
+    }
+}

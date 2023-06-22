@@ -1,0 +1,117 @@
+@import "../../pages/user_interface/PrivateScreen.scss";
+
+
+.settingssidebar {
+    @include themify($themes){
+        flex: 0.7;
+        position: sticky;
+        background-color: themed("bgtopbar");
+        @include tablet{
+          flex: 0.5;
+        }
+        
+        
+      .settingsSidebarContainer{
+        position: sticky;
+        height: calc(100vh - 80px);
+        top: 70px;
+        background: themed("bg");
+        border-right: groove;
+        padding-top: 10px;
+        
+      @include tablet{
+          width: 8vh;
+      }
+      }
+      .title{
+        margin-bottom: 30px;
+        font-size: larger;
+      }
+      ::-webkit-scrollbar {
+        width: 5px;
+      }
+      ::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: rgb(179, 179, 179);
+      }
+      
+      .settingsSidebarWrapper {
+        padding-left: 10px;
+        padding-top: 20px;
+      }
+      
+      .settingsSidebarList {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        color:themed("icons")
+      }
+      
+      .sidebarListItem {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+        padding-left: 6%;
+        
+      }
+      li.sidebarListItem.log {
+        margin-top: 100%;
+        @include tablet{
+          margin-top: 535%;
+        }
+        @include mobile{
+          margin-top: 535%;
+      }
+    }
+    
+      .sidebarListItemText{
+        color: #9A9A9A;
+        @include tablet{
+          display: none;
+        }
+        @include mobile{
+          display: none;
+      }
+      }
+      .sidebarListItem {
+        @include tablet{
+          padding-left: 15%;
+        }
+        @include mobile{
+          padding-left: 15%;
+      }
+        
+      }
+      
+      .custom-link{
+        text-decoration: none;
+        color: inherit;
+      }
+    
+      .sidebarIcon {
+        margin-right: 15px;
+        
+        
+      }
+      
+      .sidebarButton {
+        width: 150px;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: 500;
+      }
+      
+      .sidebarHr {
+        margin: 20px 0;
+      }
+      
+      .sidebarFriendList {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+    }
+ }

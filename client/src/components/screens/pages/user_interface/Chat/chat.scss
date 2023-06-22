@@ -1,0 +1,84 @@
+/*ki nrajouu sidebar
+
+@import "../PrivateScreen.scss";
+
+.messenger{
+  @include themify($themes){
+  display: flex;
+  gap: 30px;
+  background-color: themed("bgtopbar");
+  padding-top: 4vh;
+    .sidebarchat{
+    position :sticky;
+    flex: 0.15;
+    
+    height: 100vh;
+  .sidebarContainerchat{
+    position: sticky;
+    height: 89vh;
+    top: 3vh;
+    width: 10vh;
+    background: themed("bg");
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 32px;
+    margin-left: 15px;
+    padding-top: 10px;
+  }
+  .wrap {
+    padding-left: 10px;
+    padding-top: 20px;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .List {
+    padding: 0;
+    margin: 8px;
+    list-style: none;
+    color:themed("icons");
+    position:fixed;
+    top : 60px;
+  }
+  .ListItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+  }
+  .custom-link{
+    text-decoration: none;
+    color: inherit;
+  }
+}
+  
+  
+  
+}
+}
+*/
+@import "../../user_interface/PrivateScreen.scss";
+
+
+.content{
+  @include themify($themes){
+  padding: 15px;
+  background-color: themed("bgtopbar");
+  color: themed("icons");
+
+
+.messages-box{
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color:themed("bg") ;
+  width: 88vh;
+    border-radius: 5%;
+    height: 73.5vh;
+    overflow-y: auto;
+    margin-top: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+  }
+}

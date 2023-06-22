@@ -1,0 +1,45 @@
+.sidebarchat{
+    position :sticky;
+    flex: 0.15;
+    
+    height: 100vh;
+  .sidebarContainerchat{
+    position: sticky;
+    height: 80vh;
+    top: 14vh;
+    width: 9vh;
+    background: themed("bg");
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 32px;
+    margin-left: 14px;
+    margin-right: 14px;
+    display: flex;
+    align-items: center;
+    place-content: center;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .List {
+    padding: 0;
+    margin: 8px;
+    list-style: none;
+    color:themed("icons");
+    display: grid;
+    place-items: center;
+  }
+  .ListItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+  }
+  .custom-link{
+    text-decoration: none;
+    color: inherit;
+  }
+}

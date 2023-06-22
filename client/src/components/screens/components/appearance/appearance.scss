@@ -1,0 +1,21 @@
+.appearance{
+    padding: 30px 60px ;
+}
+.nav-item {
+    text-decoration: none;
+    display: flex;
+    place-content: space-between;
+    padding: 14px 5px;
+}
+.items{
+    list-style: none;
+    background-color: #eeeeee;
+}
+a.nav-link {
+    color: black;
+    font-weight: 600;
+    text-decoration:none;
+}
+.nav-item:not(.sauf) {
+    border-bottom: groove;
+  }

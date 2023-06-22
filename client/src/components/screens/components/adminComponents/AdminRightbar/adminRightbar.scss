@@ -1,0 +1,48 @@
+.right-bar-container{
+    position :sticky;
+    flex: 1.3;
+    border-radius: 32px;
+    height: 89vh;
+    background: themed("bg");
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    top: 9vh;
+    margin-right: 14px;
+    .rectangles-container{
+        margin: 20px 5px;
+    }
+    .rightbar-title{
+        margin: 15px;
+        margin-top: 15px;
+    }
+    .zina-container{
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 29vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .rectangle {
+        height: 20vh;
+        background: red;
+        border-radius: 35px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        padding-left:20px
+    }
+    .stat{
+        display: grid;
+    }
+    .number{
+        font-weight: bolder;
+        justify-self: center;
+    }
+    .rectangle h4 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      
+}

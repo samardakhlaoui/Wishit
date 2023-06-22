@@ -1,0 +1,53 @@
+.list-preview-container{
+    display: block;
+    padding-left: 80px;
+}
+#eventType, #theme {
+    width: 36%;
+    text-align: left;
+}
+.btn-primary {
+    background-color: #FADC6D;
+    color: #333333;
+    width: 30%;
+    border-radius: 100px;
+}
+button.less {
+    border: none;
+    float: right;
+    padding: 5px;
+    background: #FADC6D;
+    border-radius: 5px;
+}
+.more {
+    padding: 8px;
+    border-radius: 15%;
+    font-size: 17px;
+    background-color: #FADC6D;
+    border:none;
+    transition: all 0.3s ease
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotate {
+    animation: rotate 10s linear infinite;
+  }
+  .event-type {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+.name-container, .desc-container {
+    background: #eeeeeebd;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}

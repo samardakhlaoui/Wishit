@@ -1,0 +1,13 @@
+@import "./PrivateScreen.scss";
+
+
+$margin-body: 0;
+$font :"poppins", sans serif;
+body {
+@include themify($themes){
+
+  margin: $margin-body;
+  font-family: $font;
+  background: themed("bg");
+}
+}

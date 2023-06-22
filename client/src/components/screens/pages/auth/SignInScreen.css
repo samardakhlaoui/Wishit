@@ -1,0 +1,38 @@
+.signin-screen__subbtn{
+  top:15%;
+  position: absolute;
+  right: 15%;
+  border-radius: 100px;
+  width:15%;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+.signin_btn {
+  position: absolute;
+  left: -1%;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  color: #111111;
+  font-weight:lighter;
+  border-radius: 100px;
+  padding: 8.6% 17%;
+}
+.signup_btn {
+  position: absolute;
+  right: -1%;
+  text-decoration: none;
+  background-color: #FCDF78;
+  border-radius: 100px;
+  padding: 8.6% 17%;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+.signin-screen__forgotpassword {
+    font-size: 0.6rem;
+    text-decoration: none;
+    color: #333333;
+    padding-left: 25px;
+  }
+  

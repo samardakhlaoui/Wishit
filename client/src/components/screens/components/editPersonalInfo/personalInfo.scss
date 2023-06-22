@@ -1,0 +1,42 @@
+.edit{
+    padding: 30px 60px ;
+}
+.profilePic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15%;
+  }
+  .sameLine{
+    display: flex;
+    place-content: space-between;
+  }
+.form-group.col-md-6 {
+    width: 49%;
+}
+.country{
+    width: 30%;
+}
+.bttn {
+    padding: 1%;
+    background-color: #FADC6D;
+    color: #333333;
+    width: 10%;
+    border-radius: 100px;
+    border: none;
+    height: 45%;
+    float: right;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.GSright{
+    float: right;
+}
+#language, #gender, #country, #relationship {
+    text-align: -webkit-left;
+  }
+  .form-group label {
+    font-weight: bolder;
+}

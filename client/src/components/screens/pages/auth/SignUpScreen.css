@@ -1,0 +1,53 @@
+.signin-screen__subbtn{
+  top:15%;
+  position: absolute;
+  right: 15%;
+  border-radius: 100px;
+  width:15%;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+.signin_btn {
+  position: absolute;
+  left: -1%;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  color: #111111;
+  font-weight:lighter;
+  border-radius: 100px;
+  padding: 8.6% 17%;
+}
+.signup_btn {
+  position: absolute;
+  right: -1%;
+  text-decoration: none;
+  background-color: #FCDF78;
+  border-radius: 100px;
+  padding: 8.6% 17%;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+  /* Select input styling */
+select {
+  display: block;
+  width: 75%;
+  text-align: center;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* To make the two selects appear side by side in form-group_same_line class */
+.form-group_same_line {
+    display: flex;
+    text-align: -webkit-center;
+}
